@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css">
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <title>Display buildings in 3D</title>
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+        crossorigin=""></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js" integrity="sha512-ozq8xQKq6urvuU6jNgkfqAmT7jKN2XumbrX1JiB3TnF7tI48DPI4Gy1GXKD/V3EExgAs1V+pRO7vwtS1LHg0Gw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous"></script>
+
+        <!-- BetterWMS plubin innit -->
+        <script src="lib\L.TileLayer.BetterWMS.js"></script>
+        <!-- leaflet providers -->
+        <script src="lib\leaflet-providers.js"></script>
+    
+        <!-- leaflet side-by-side -->
+        <script src="lib\leaflet-side-by-side.min.js"></script>
+    
+        <script src="https://cdn.osmbuildings.org/classic/0.2.2b/OSMBuildings-Leaflet.js"></script>
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+        <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+        <body>
+           <!-- <div class="se-pre-con">
+                <div id="loader2"></div>
+            </div>-->
+                </head>
+                <body>
+                
+                <div class="header">
+                 <a href="#default" class="logo">DIGITAL TWIN</a>
+                  <div class="header-right">
+                    <a class="active" href="Indext_page.html">Hoofdpagina</a>
+                    <a href="index.html">Experiment</a>
+                    <a href="#about">Overig</a>
+                  </div>
+                </div>
+
+            <div id="map"></div>
+
+            <BR>
+                <!--<div class="container5">
+                     <video autoplay muted loop id="myVideo">
+                    <source src="Drone.mp4" type="video/mp4">
+                    </video> 
+              
+            
+              </div>
+            </div>-->
+
+
+            <div id="container2">
+                    <div class="loader"></div>
+
+             </div>
+             <button id="submit" value="submit" class="btn btn-primary trigger-submit">Submit</button>
+
+                <!--<div id="box1">
+                    <br><a>Aantal elementen:</a>
+                    <p id="algemeen2"><img src="sakura.png"></p> 
+                </div>
+
+                <div id="box2">
+                    <br><a id="boxkop">Under construction</a>
+                    <br><p id="algemeen"><img src="customer-support.png"></p> 
+                </div>
+
+                <div id="box3">
+                    <br><a>Under construction</a>
+                    <p id="algemeen"><img src="customer-support.png"></p> <br>
+                </div> -->
+
+    
+            <div class="container3">
+                <div id="box1">
+                    <br><a>Aantal elementen:</a>
+                    <p id="algemeen2"><img src="sakura.png"></p> 
+                </div>
+
+                <div id="box2">
+                    <br><a id="boxkop">Under construction</a>
+                    <p id="algemeen2"><img src="sakura.png"></p> 
+                </div>
+
+                <div id="box3">
+                    <br><a>Under construction</a>
+                    <p id="algemeen2"><img src="sakura.png"></p> 
+                </div>        
+            </div>
+
+            <div class="container4">
+                <div id="box1">
+                    <br><a>Blauw oppervlakte</a>
+                    <p id="algemeen">37.5°C</p> 
+                </div>
+
+                <div id="box2">
+                    <br><a>Grijs oppervlakte</a>
+                    <br><p id="algemeen">39.5°C</p> 
+                </div>
+
+                <div id="box3">
+                    <br><a>Groen oppervlakte</a>
+                    <p id="algemeen">37.4°C</p> <br>
+                </div>        
+            </div>
+
+            <script src="interactive.js"></script>
+            <script>
+   
+            </script>  
+
+        </body>
+</html>
